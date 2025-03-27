@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Bhinneka</title>
+</head>
+<style>
+    th{text-align: left;}
+</style>
+<body>
+    <table border="1" style="margin: auto;" width="60%" height="300%">
+        <th>
+            <a href="https://lms.satyaterrabhinneka.ac.id/"><img src="https://satyaterrabhinneka.ac.id/assets/img/logo-universitas-satya-terra-bhinneka.png"/></a>
+            <p style="font-size:150%;"> Menu Navigasi </p>
+            <ul>
+                <li><a href="https://lms.satyaterrabhinneka.ac.id/?redirect=0"> Beranda </a></li>
+                <li><a href="https://satyaterrabhinneka.ac.id/"> Tentang Kami </a></li>
+                <li><a href="https://satyaterrabhinneka.ac.id/kontak/"> Hubungi </a></li>
+            </ul>
+            <p style="font-size:150%;"> Formulir Pengguna </p>
+                <label for="name" style="font-weight: normal;"> Nama :<br></label>
+                <input type="text" id="text" name="text" />
+            <p style="font-weight: normal;">
+                <label for="email"> Email :<br></label>
+                <input type="email" id="email" name="email" /></p>
+            <p style="font-weight: normal;">
+                <label for="password"> Password :<br></label>
+                <input type="password" id="password" name="password" /></p>
+            <p style="font-weight: normal;">
+                <label for="text"> Alamat :<br></label>
+                <input type="text" id="text" name="text" style="width: 400px;height: 70px;"></p>
+            <p style="font-weight: normal;"> Jenis Kelamin:</p>
+                <label style="font-weight: normal;">
+                    <input type="radio" name="Jenis Kelamin" value="Laki-laki"> Laki-laki
+                </label>
+                <p><label style="font-weight: normal;"><input type="radio" name="Jenis Kelamin" value="Perempuan"> Perempuan</label></p>
+            <p style="font-weight: normal;">
+                <label for="usia"> Usia :<br></label>
+                <input type="password" id="usia" name="usia" style="width: 50px;height: 20px;"/></p>
+            <p style="font-weight: normal;"> Hobi :</p>
+                <label style="font-weight: normal;">
+                    <input type="checkbox" name="Hobi" value="Olahraga"> Olahraga
+                </label>
+                <p><label style="font-weight: normal;"><input type="checkbox" name="Hobi" value="musik"> Musik</label></p>
+                <p><label style="font-weight: normal;"><input type="checkbox" name="Hobi" value="membaca"> Membaca</label></p>
+                <form action="upload.php" method="post" enctype="multipart/form-data"><p style="font-weight: normal;"> Pilih Gambar : <br>
+                    <input type="file" id="File" name="File" style="width: 80px; height: 20px;" type="file" name="file" id="file" required>
+                    <label for="file" >No File Chose <br></label></p></form>
+                <form action="upload.php" method="post" enctype="multipart/form-data"><p style="font-weight: normal;">
+                    <label for="text" > Tanggal Lahir : <br> </label>
+                    <input type="date" name="birthdate" style="width: 100px;height: 20px;"/></p>    
+                <p><input type="submit" value="Submit"/>
+            
+        </th>
+    </table>
+</body>
+</html>
