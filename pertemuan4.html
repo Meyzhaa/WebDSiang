@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        text-shadow: 4px 4px 3px #e67e00;
+    }
+    
+    nav {
+        background-color: #ff8c00; /* Warna oranye */
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start; /* Agar menu navigasi berada di kiri */
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+    
+    nav ul li a:hover {
+        background-color: #e67e00; /* Warna oranye yang lebih gelap saat dihover */
+    }
+    
+    .container {
+        display: flex;
+        padding: 20px;
+    }
+    
+    main {
+        flex: 2;
+        background-color: #eee;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    
+    article {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    article:last-child {
+        border-bottom: none;
+    }
+    
+    aside {
+        flex: 1;
+        background-color: #ddd;
+        padding: 20px;
+    }
+    
+    aside h3 {
+        margin-top: 0;
+    }
+    
+    aside ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    aside ul li {
+        margin-bottom: 10px;
+    }
+    
+    aside ul li a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .debar{
+        text-shadow: 4px 4px 3px #e67e00;
+    }
+    .text{
+        text-shadow: 4px 4px 3px #e67e00;
+    }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="fancy">Judul Utama Halaman</h1>
+    </header>
+    <nav style="height: 135px;">
+        <ul>
+            <li><a  style="color: #333;" href="#">Home</a></li> </ul>
+        <ul>
+            <li><a href="#">About</a></li></ul>
+        <ul>
+            <li><a href="#">Services</a></li></ul>
+        <ul>
+            <li><a href="#">Contact</a></li></ul>
+    </nav>
+    <div class="container">
+        <main>
+            <article>
+                <p class="text">Artikel 1</p>
+                <a href="https://cookpad.com/id/cari/bolu%20kukus">Cara Memasak Kue Bolu Kukus</a>
+                <p>Cara membuat bolu kukus lembut dan enak yang mudah dibuat di rumah, dari bolu kukus mekar hingga bolu kukus pisang, dan lainnya.</p>
+            </article>
+            <article>
+                <p class="text">Artikel 2</p>
+                <a href="https://www.dettol.co.id/perlindungan-keluarga-dan-rumah/cara-menjaga-kesehatan-tubuh-anak/?gad_source=1&gbraid=0AAAAApahLI7y4L0Rc7JU6U7yvxxkwpTIQ&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac8WJz4ZknSr82L9c1aFeVUFk9NyvZocGUq_zNI5IFMoUkJ5fXZKRScaAlQKEALw_wcB">
+                    Cara Menjaga Kesehatan Tubuh Anak</a>
+                <p>Pelajari berbagai cara mengurangi risiko penyakit dan menjaga sistem kekebalan tubuh anak. Dettol Antiseptik Cair efektif membunuh kuman & serta berikan perlindungan ke seisi rumah</p>
+            </article>
+            <article>
+                <p class="text">Artikel 3</p>
+                <a href="https://www.ganto.co/artikel/886/bullying-di-usia-sekolah.html">Bullying di Usia Sekolah</a>
+                <p>Usia sekolah merupakan masa yang sangat menentukan kualitas seorang dewasa dengan harapan sehat secara fisik, mental, sosial, dan emosi. Kasus yang sering terjadi di tingkat sekolah yang dapat mempengaruhi kesehatan mental seseorang adalah bullying.</p>
+            </article>
+            </main>
+
+        <aside>
+            <h3 class="debar">Sidebar</h3>
+            <ul>
+                <li><a href="https://cookpad.com/id/cari/bolu%20kukus">Artikel 1</a></li>
+                <li><a href="https://www.dettol.co.id/perlindungan-keluarga-dan-rumah/cara-menjaga-kesehatan-tubuh-anak/?gad_source=1&gbraid=0AAAAApahLI7y4L0Rc7JU6U7yvxxkwpTIQ&gclid=Cj0KCQjwqv2_BhC0ARIsAFb5Ac8WJz4ZknSr82L9c1aFeVUFk9NyvZocGUq_zNI5IFMoUkJ5fXZKRScaAlQKEALw_wcB">Artikel 2</a></li>
+                <li><a href="https://www.ganto.co/artikel/886/bullying-di-usia-sekolah.html">Artikel 3</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hak Cipta Kami</p>
+    </footer>
+
+</body>
+</html>
