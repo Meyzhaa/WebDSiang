@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas Praktek Pertemuan 9</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Konversi Bilangan</h2>
+  <input type="text" id="inputAngka" placeholder="Masukkan Bilangan Desimal">
+  <button onclick="konversi()">Konversi</button>
+
+  <script>
+    function konversi() {
+      var input = document.getElementById("inputAngka").value;
+      var angka = parseInt(input);
+
+      if (isNaN(angka)) {
+        alert("Masukkan Angka yang benar!");
+      } else {
+        var biner = angka.toString(2);
+        var oktal = angka.toString(8);
+        var heksa = angka.toString(16).toUpperCase();
+
+        alert("Biner : " + biner + "Oktal : " + oktal + "Heksadesimal: " + heksa);
+      }
+    }
+  </script>
+
+</body>
+</html>
